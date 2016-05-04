@@ -5,7 +5,7 @@
 	* 中文停用词: 综合了"百度停用词表"，"哈工大停用词表"，"四川大学机器学习实验室停用词表"等若干停用词表，取交集并去除了不需要的标点符号和英文单词
 * Tips --
 	* Chinese extraction
-	
+	```python
 	def Chinese_word_extraction():
 		chinese_pattern = u"([\u4e00-\u9fa5]+)"
 		re_data = chi_pattern.findall(content_raw)
