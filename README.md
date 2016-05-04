@@ -17,7 +17,8 @@
 		content = HanziConv.toSimplified(content)
 	* Interesting Synonyms
 	```python
-	u'吻腚':u'稳定',
+	replace_dict = {
+		u'吻腚':u'稳定',
 		u'弓虽':u'强',
 		u'女干':u'奸',
 		u'示土':u'社',
