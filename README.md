@@ -10,11 +10,13 @@
 		chinese_pattern = u"([\u4e00-\u9fa5]+)"
 		re_data = chi_pattern.findall(content_raw)
 		content_clean  = ' '.join(re_data)
+
 	* Traditional 2 Simplified
 	```python
 	from hanziconv import HanziConv
 	def tra2sim(content):
 		content = HanziConv.toSimplified(content)
+	
 	* Interesting Synonyms
 	```python
 	replace_dict = {
