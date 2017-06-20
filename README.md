@@ -6,8 +6,10 @@
 * Tips --
 	* Chinese extraction
 	```python
+	import re
 	def Chinese_word_extraction(content_raw):
 		chinese_pattern = u"([\u4e00-\u9fa5]+)"
+		chi_pattern = re.compile(chinese_pattern)
 		re_data = chi_pattern.findall(content_raw)
 		content_clean  = ' '.join(re_data)
 	```
